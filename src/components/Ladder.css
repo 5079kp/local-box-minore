@@ -1,0 +1,132 @@
+/* Outer box */
+.ladder-box {
+  background: rgba(10, 15, 40, 0.8);
+  border: 1px solid #2d3eff;
+  padding: 15px;
+  border-radius: 15px;
+  max-height: 70vh;
+  overflow-y: auto;
+  color: white;
+  font-size: 13px;
+}
+
+/* Title */
+.ladder-title {
+  text-align: center;
+  color: #ffd54f;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* List styling */
+.ladder-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ladder-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 10px;
+  background: #131b36;
+  color: #d4d4d4;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  transition: 0.2s ease;
+  border: 1px solid transparent;
+}
+
+/* Active highlight (KBC effect) */
+.ladder-item.active {
+  background: #ffeb3b;
+  color: #000;
+  font-weight: bold;
+  border: 1px solid #ff9800;
+  box-shadow: 0 0 10px rgba(255, 230, 0, 0.8);
+}
+
+/* Number + label */
+.ladder-number {
+  font-weight: bold;
+}
+
+.ladder-label {
+  font-weight: 500;
+}
+/* 📌 LADDER AREA */
+.kbc-ladder {
+  width: 270px;
+  background: linear-gradient(180deg, #0a0f3a, #02041a);
+  border-left: 4px solid #1e2cff;
+  border-radius: 0 20px 20px 0;
+  padding: 20px;
+  box-shadow: 0 0 20px #000 inset;
+  animation: borderGlow 3s infinite alternate;
+}
+
+@keyframes borderGlow {
+  0% { border-left-color: #1e2cff; box-shadow: 0 0 10px #1e2cff inset; }
+  100% { border-left-color: #7a5bff; box-shadow: 0 0 20px #7a5bff inset; }
+}
+
+.ladder-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  letter-spacing: 3px;
+  color: #5daeff;
+  text-shadow: 0 0 10px #447dff;
+}
+
+/* 📄 LADDER LIST */
+.ladder-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ladder-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 14px;
+  margin: 6px 0;
+  border-radius: 10px;
+  background: rgba(25, 25, 75, 0.45);
+  border: 1px solid rgba(100, 100, 255, 0.3);
+  transition: 0.25s ease;
+  color: #e0e0ff;
+  font-size: 15px;
+}
+
+/* ⭐ ACTIVE QUESTION (BRIGHT GOLD GLOW) */
+.ladder-active {
+  background: #ffe58b;
+  color: #000;
+  border-color: #ffcf40;
+  font-weight: bold;
+  box-shadow: 0 0 20px #ffdd55, 0 0 40px #ffaa00 inset;
+  transform: scale(1.04);
+  animation: activePulse 1.4s infinite alternate;
+}
+
+@keyframes activePulse {
+  0% { box-shadow: 0 0 10px #ffaa00; }
+  100% { box-shadow: 0 0 25px #ffcc33; }
+}
+
+/* 🔥 MILESTONE STEPS (Special Orange Highlights) */
+.ladder-item.milestone {
+  background: rgba(255, 147, 28, 0.15);
+  border-color: #ff9a2d;
+  color: #ffbe7a;
+  font-weight: bold;
+  text-shadow: 0 0 6px #ff7800;
+}
+
+/* Hover Glow */
+.ladder-item:hover {
+  transform: translateX(4px);
+  box-shadow: 0 0 15px #4b5cff;
+}

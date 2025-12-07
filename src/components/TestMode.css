@@ -1,0 +1,171 @@
+/* Layout */
+.test-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+.ladder-area {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .ladder-area {
+    display: block;
+  }
+}
+
+/* Main Area */
+.main-area {
+  background: rgba(15, 20, 45, 0.75);
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid #2d3eff;
+  color: white;
+}
+
+/* Top Row */
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.quit-btn {
+  background: #1e293b;
+  border: 1px solid #334155;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.quit-btn:hover {
+  background: #334155;
+}
+
+.mode-tag {
+  margin-left: 10px;
+  color: #8ea3d1;
+  font-size: 12px;
+}
+
+/* Question Box */
+.question-box {
+  background: #0f172a;
+  padding: 18px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.question-text {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Options Grid */
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+/* Option Button Base */
+.opt-btn {
+  width: 100%;
+  padding: 15px;
+  background: #1e3a8a;
+  border-radius: 12px;
+  border: 1px solid #2d3eff;
+  color: white;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  transition: 0.2s;
+}
+
+.opt-btn:hover {
+  background: #3b5bcc;
+}
+
+/* States */
+.opt-selected {
+  background: #facc15;
+  color: black;
+}
+
+.opt-correct {
+  background: #22c55e;
+  color: black;
+}
+
+.opt-wrong {
+  background: #ef4444;
+  color: white;
+}
+
+.opt-hidden {
+  background: #334155;
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.opt-letter {
+  font-weight: bold;
+}
+
+/* Audience Poll */
+.audience-bar {
+  margin-top: 6px;
+  background: #1e1b4b;
+  height: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.audience-fill {
+  height: 5px;
+  background: #facc15;
+}
+
+.audience-percent {
+  font-size: 11px;
+  color: #fde047;
+  margin-top: 3px;
+}
+
+/* Next Button */
+.bottom-row {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.next-btn {
+  background: #22c55e;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.next-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.wrong-msg {
+  margin-top: 20px;
+  text-align: center;
+  color: #f87171;
+  font-weight: bold;
+}
+
+/* No Questions */
+.no-questions {
+  text-align: center;
+  padding: 30px;
+  color: #94a3b8;
+}

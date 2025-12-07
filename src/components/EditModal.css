@@ -1,0 +1,125 @@
+/* ===== Overlay ===== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  backdrop-filter: blur(4px);
+}
+
+/* ===== Modal Box ===== */
+.modal-container {
+  width: 450px;
+  background: #0a0f2c;
+  padding: 22px;
+  border-radius: 15px;
+  border: 2px solid #2d3eff;
+  box-shadow: 0 0 15px rgba(52, 91, 255, 0.5);
+  animation: popup 0.3s ease-out;
+  color: #fff;
+}
+
+@keyframes popup {
+  from { transform: scale(0.7); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+/* ===== Title ===== */
+.modal-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-align: center;
+  color: #4dabff;
+}
+
+/* ===== Textarea ===== */
+.modal-textarea {
+  width: 100%;
+  padding: 10px;
+  background: #0e183f;
+  border: 1px solid #3454ff;
+  border-radius: 10px;
+  color: white;
+  min-height: 80px;
+  resize: none;
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+/* ===== Options Grid ===== */
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.option-input {
+  padding: 8px;
+  background: #0e183f;
+  border-radius: 8px;
+  border: 1px solid #3454ff;
+  color: white;
+}
+
+/* ===== Footer Section ===== */
+.footer-row {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ===== Select Box ===== */
+.select-box label {
+  margin-right: 6px;
+  font-size: 14px;
+}
+
+.select-box select {
+  background: #0e183f;
+  color: white;
+  padding: 6px 8px;
+  border-radius: 8px;
+  border: 1px solid #3454ff;
+}
+
+/* ===== Button Group ===== */
+.btn-group {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+/* Cancel Button */
+.cancel-btn {
+  background: #b71c1c;
+  color: white;
+}
+.cancel-btn:hover {
+  background: #ff3c3c;
+}
+
+/* Save Button */
+.save-btn {
+  background: #1e88e5;
+  color: white;
+}
+.save-btn:hover {
+  background: #42a5f5;
+}

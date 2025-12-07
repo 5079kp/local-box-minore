@@ -1,0 +1,131 @@
+/* EMPTY TEXT */
+.empty-text {
+  color: #94a3b8;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* QUIZ LIST WRAPPER */
+.quiz-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* CARD */
+.q-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #334155;
+  padding: 16px;
+  border-radius: 14px;
+  color: #e2e8f0;
+  backdrop-filter: blur(6px);
+}
+
+/* LEFT SIDE (QUESTION + OPTIONS) */
+.q-left {
+  width: 100%;
+}
+
+/* Question Number */
+.q-number {
+  font-size: 12px;
+  color: #94a3b8;
+  margin-bottom: 3px;
+}
+
+/* Question Text */
+.q-question {
+  font-size: 16px;
+  font-weight: 600;
+  color: #38bdf8;
+}
+
+/* Options Grid */
+.q-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+/* Each Option Box */
+.q-option {
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* CORRECT ANSWER HIGHLIGHT */
+.q-option.correct {
+  background: rgba(22, 101, 52, 0.35);
+  border: 1px solid #16a34a;
+}
+
+/* Normal Option */
+.q-option.normal {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Option Label */
+.opt-label {
+  font-weight: 700;
+  color: #eab308;
+}
+
+/* RIGHT SIDE BUTTONS */
+.q-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* BUTTON BASE */
+.btn {
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* EDIT BUTTON */
+.edit-btn {
+  background: #facc15;
+  color: #1e1e1e;
+}
+
+.edit-btn:hover {
+  background: #eab308;
+}
+
+/* DELETE BUTTON */
+.delete-btn {
+  background: #dc2626;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #b91c1c;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .q-card {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .q-options {
+    grid-template-columns: 1fr;
+  }
+}

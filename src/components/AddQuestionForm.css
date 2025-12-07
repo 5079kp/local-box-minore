@@ -1,0 +1,106 @@
+/* MAIN CONTAINER */
+.kbc-form {
+  max-width: 500px;
+  margin: auto;
+  background: rgba(10, 18, 40, 0.85);
+  padding: 25px;
+  border-radius: 14px;
+  border: 2px solid #23395d;
+  box-shadow: 0 0 15px rgba(0, 150, 255, 0.25);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+/* HEADING */
+.form-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffd700;
+  margin-bottom: 15px;
+}
+
+/* QUESTION TEXTAREA */
+.form-textarea {
+  width: 100%;
+  padding: 10px;
+  background: #0a0f2b;
+  border: 1px solid #1b2a41;
+  color: white;
+  border-radius: 10px;
+  resize: none;
+  height: 80px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.form-textarea:focus {
+  border-color: #0ea5e9;
+  box-shadow: 0 0 10px rgba(0, 170, 255, 0.4);
+}
+
+/* GRID FOR OPTIONS */
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.option-input {
+  padding: 10px;
+  background: #0a0f2b;
+  border: 1px solid #1b2a41;
+  border-radius: 10px;
+  color: white;
+  outline: none;
+  transition: 0.3s;
+}
+
+.option-input:focus {
+  border-color: #0ea5e9;
+  box-shadow: 0 0 8px rgba(0, 170, 255, 0.4);
+}
+
+/* ANSWER DROPDOWN */
+.answer-row {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.answer-select {
+  padding: 8px 12px;
+  background: #0a0f2b;
+  color: white;
+  border-radius: 8px;
+  border: 1px solid #1b2a41;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.answer-select:focus {
+  border-color: #0ea5e9;
+}
+
+/* BUTTON */
+.submit-btn {
+  width: 100%;
+  background: #0ea5e9;
+  padding: 12px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #0284c7;
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px rgba(0, 170, 255, 0.5);
+}

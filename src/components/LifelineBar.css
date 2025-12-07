@@ -1,0 +1,58 @@
+/* Container */
+.lifeline-container {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+/* Base button style */
+.lifeline-btn {
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Each lifeline color */
+.fifty {
+  background-color: #9333ea; /* purple */
+}
+
+.fifty:hover {
+  background-color: #7e22ce;
+}
+
+.audience {
+  background-color: #4f46e5; /* indigo */
+}
+
+.audience:hover {
+  background-color: #4338ca;
+}
+
+.flip {
+  background-color: #ec4899; /* pink */
+}
+
+.flip:hover {
+  background-color: #db2777;
+}
+
+/* Disabled state */
+.disabled {
+  background-color: #4b5563 !important; /* gray */
+  cursor: not-allowed;
+  opacity: 0.6;
+  transform: none !important;
+}
+
+.lifeline-btn:not(.disabled):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px rgba(0, 180, 255, 0.35);
+}
